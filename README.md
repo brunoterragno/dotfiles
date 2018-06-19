@@ -20,7 +20,7 @@ $ sudo softwareupdate -i -r
 
 **2.** Get this project somehow and go to its directory. Using [Git](http://www.git-scm.com/):
 ```sh
-$ git clone https://github.com/diessica/dotfiles.git ~/dotfiles
+$ git clone https://github.com/brunoterragno/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 ```
 
