@@ -1,0 +1,8 @@
+applesimutils
+coreutils
+curl
+fish
+openssl
+watchman
+wget --with-iri
+yarn --without-node

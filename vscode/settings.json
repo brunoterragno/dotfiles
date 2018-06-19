@@ -1,55 +1,33 @@
 {
-  "editor.renderIndentGuides": false,
-  "editor.fontLigatures": true,
-  "editor.quickSuggestionsDelay": 5,
-  "editor.minimap.enabled": false,
-  "editor.rulers": [
-    80
-  ],
-  "editor.renderIndentGuides": true,
-  "editor.quickSuggestionsDelay": 5,
-  "terminal.integrated.fontLigatures": true,
+  // Place your settings in this file to overwrite the default settings
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-  "[markdown]": {
-    "zenMode.centerLayout": true,
-    "editor.fontFamily": "iA Writer Duospace, Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    "editor.wordWrap": true,
-    "editor.lineNumbers": "off",
-    "workbench.colorTheme": "Default Light+",
-    "editor.rulers": [],
-    "editor.fontSize": 14,
-  },
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "python.linting.lintOnSave": true,
-  "prettier.eslintIntegration": true,
-  "workbench.activityBar.visible": false,
-  "workbench.editor.showTabCloseButton": false,
-  "workbench.sideBar.location": "right",
-  "workbench.iconTheme": null,
-  "workbench.activityBar.visible": false,
-  "workbench.editor.showTabCloseButton": false,
-  "workbench.sideBar.location": "right",
-  "terminal.integrated.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": true,
+  "editor.insertSpaces": true,
+  "editor.fontSize": 15,
+  "editor.wordWrap": "off",
+  "editor.autoIndent": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestionsDelay": 5,
+  "explorer.openEditors.visible": 0,
   "files.exclude": {
-    "**/node_modules": true,
-    ".vscode": true
-  },
-  "files.associations": {
-    "*.js": "javascriptreact",
-    "*.css": "postcss"
+    "**/node_modules": true
   },
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
-  "extension-manager.extensions": [
-    "EditorConfig.EditorConfig",
-    "christian-kohler.path-intellisense",
-    "dbaeumer.vscode-eslint",
-    "streetsidesoftware.code-spell-checker",
-    "esbenp.prettier-vscode",
-    "mushan.vscode-paste-image",
-    "yzhang.markdown-all-in-one"
-  ]
+  "debug.toolBarLocation": "docked",
+  "javascript.format.enable": false,
+  "csharp.format.enable": false,
+  "csharpfixformat.style.spaces.beforeParenthesis": false,
+  "csharpfixformat.style.braces.onSameLine": false,
+  "vsicons.projectDetection.disableDetect": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.colorTheme": "Ayu Dark",
+  "workbench.fontAliasing": "antialiased"
 }

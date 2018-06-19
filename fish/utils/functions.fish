@@ -1,19 +1,26 @@
-# Enter the directory and show its content
-function cd
-  builtin cd $argv; ls
-end
-
 # Create a new directory and enter it
 function mkd
   mkdir -p "$argv"; cd "$argv"
 end
 
-function note
-  set filename $argv[2]; or set filename (date -u +"%Y-%m-%d-%H%M")
-  echo $argv[1] >> ~/Notes/"$filename.md"
+function cd
+  builtin cd $argv; ls
 end
 
-# nvm with Fish shell's Bass (https://github.com/edc/bass#nvm)
+function node -d "Server-side JavaScript runtime" -w node
+  __nvm_run "node" $argv
+end
+
+function npm -d "node package manager" -w npm
+  __nvm_run "npm" $argv
+end
+
 function nvm
-  bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+  if not type -q bass
+    echo 'Bass is not installed please install it running fisher edc/bass'
+    return
+  end
+  set -q NVM_DIR; or set -gx NVM_DIR ~/.nvm
+  set -g nvm_prefix $NVM_DIR
+  bass source $nvm_prefix/nvm.sh --no-use ';' nvm $argv
 end
